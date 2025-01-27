@@ -1,0 +1,20 @@
+To fix the layout inconsistencies, we can explicitly set the height of the parent div or use a different layout technique. Below is an example where we set the height of the parent div in a more reliable manner:
+
+```css
+div {
+  width: 50%;
+  height: 200px; /* Explicit height added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+div > span {
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral;
+}
+```
+
+Alternatively, consider using grid layout or other methods that are less susceptible to this type of implicit height calculation problem depending on your context.
